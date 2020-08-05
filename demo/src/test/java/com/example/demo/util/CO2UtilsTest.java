@@ -22,4 +22,9 @@ class CO2UtilsTest {
         String gram="142g";
         assertEquals(142,CO2Utils.gramVal(gram));
     }
+
+    @Test
+    void replaceSpace(){
+      assertEquals("New%20York", CO2Utils.replaceSpace("New York"));
+    }
 }

@@ -28,4 +28,11 @@ public class CO2Utils {
         }
         return null;
     }
+
+    public static String replaceSpace(String city){
+        if(city.contains(" ")) {
+            city=city.replaceAll(" ", "%20");
+        }
+        return city;
+    }
 }
